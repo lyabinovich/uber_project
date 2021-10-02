@@ -145,6 +145,7 @@ nav {
 }
 
 .label {
+  position: relative;
   margin: 0 auto;
   padding: 5px 12px;
   width: 115px;
@@ -158,7 +159,14 @@ nav {
   color: #FFFFFF;
 }
 
+.label_white {
+  background-color: #fff;
+  color: #000;
+  z-index: 2;
+}
+
 .title {
+  position: relative;
   margin-top: 38px;
   margin-bottom: 0;
   font-weight: bold;
@@ -169,12 +177,23 @@ nav {
   color: #222222;
 }
 
+.title_white {
+  color: #fff;
+  z-index: 2;
+}
+
 .subtitle {
+  position: relative;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
   text-align: center;
   color: #222222;
+}
+
+.subtitle_white {
+  color: #fff;
+  z-index: 2;
 }
 
 .reasons {
@@ -301,4 +320,36 @@ nav {
   height: 29px;
   background: #000000;
   border-radius: 100%;
+}
+
+.choice {
+  position: relative;
+  min-height: 895px;
+  padding: 57px 0 138px 0;
+  background: url("../img/bg/mobile_bg.png") center center/cover no-repeat;
+}
+
+.choice_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+
+.choice_descr {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
 }
