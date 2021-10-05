@@ -145,6 +145,8 @@ nav
         background-color: #fff
         color: #000
         z-index: 2
+    &_min
+        width: 75px
 
 .title
     position: relative
@@ -338,3 +340,23 @@ nav
             li
                 &:before
                     background: url('../icons/check_red.svg') center (center / cover) no-repeat
+
+.world
+    position: relative
+    min-height: 716px
+    padding: 48px 0
+    background: url('../img/bg/world_bg.png') center (center / cover) no-repeat
+    &_link
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 48px
+        font-weight: 400
+        font-size: 15px
+        line-height: 68px
+        text-align: center
+        text-transform: uppercase
+        color: #1FBAD6
+        &:hover
+            color: #ffffff
+            text-decoration: none
