@@ -1,3 +1,10 @@
+$main-color: #1EACC7
+$second-color: #ff5656
+
+=btn_hover
+    &:hover
+        background: none
+        background-color: $main-color
 *
     font-family: 'Roboto', sans-serif
 
@@ -71,6 +78,7 @@ nav
         text-transform: uppercase
         color: #FFFFFF
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+        +btn_hover
 
 .promo
     padding: 150px 0 135px 0
@@ -118,6 +126,7 @@ nav
         text-transform: uppercase
         color: #FFFFFF
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+        +btn_hover
 
 .label
     position: relative
@@ -243,6 +252,27 @@ nav
             height: 29px
             background: #000000
             border-radius: 100%
+            cursor: pointer
+            &:before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $main-color
+                transition: 0.3s all
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                width: 2px
+                height: 14px
+                background-color: $main-color
+                transition: 0.3s all
+            &:hover
+                &:before, &:after
+                    background: $second-color
 
 .choice
     position: relative
@@ -268,3 +298,43 @@ nav
         width: 100%
         background-color: #070716
         z-index: 1
+
+.require
+    padding: 68px 0 56px 0
+    &_block
+        margin: 32px 0
+    &_title
+        font-weight: 400
+        font-size: 22px
+        color: #1CA8C3
+    &_descr
+        font-weight: 400
+        font-size: 17px
+        line-height: 24px
+        color: #1CA8C3
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        li
+            position: relative
+            font-weight: 300
+            font-size: 17px
+            color: #222222
+            margin-bottom: 10px
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url('../icons/check_blue.svg') center (center / cover) no-repeat
+    .warning
+        .require_title
+            color: $second-color
+        .require_list
+            li
+                &:before
+                    background: url('../icons/check_red.svg') center (center / cover) no-repeat
