@@ -876,6 +876,10 @@ footer a:hover {
     line-height: 18px;
     margin-top: 3px;
   }
+  .subheader_btn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1EACC7 0%, #4ce2ff 100%);
+  }
   .promo {
     min-height: 400px;
     padding: 130px 0 34px 0;
@@ -901,8 +905,19 @@ footer a:hover {
     font-size: 16px;
     line-height: 44px;
   }
+  .promo_btn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1EACC7 0%, #4ce2ff 100%);
+  }
   .menu {
     width: 85%;
+  }
+  .menu_item {
+    width: 100%;
+    text-align: center;
+  }
+  .menu_link {
+    display: block;
   }
   .reasons {
     padding: 22px 0 36px 0;
